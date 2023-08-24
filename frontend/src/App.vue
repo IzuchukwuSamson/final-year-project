@@ -5,6 +5,7 @@ import GSTC from "./components/GSTC.vue";
 </script>
 
 <template>
+  <h1>Sprinkler Irrigation Application For Agricultural Engineers</h1>
   <GSTC />
 </template>
 
