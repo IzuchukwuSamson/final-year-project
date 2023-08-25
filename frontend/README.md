@@ -1,7 +1,29 @@
-# Vue 3 + Vite
+# Gantt chart for Vue.js 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Here you can find the demo sources of Gantt chart component for Vue.js framework. The demo is implemented with the help of JavaScript Gantt chart library - dhtmlxGantt.
 
-## Recommended IDE Setup
+## Project setup
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+For detailed explanation on how things work, consult the [Configuration Reference](https://cli.vuejs.org/config/)..
+
+
+## Related resources
+
+ - Read full tutorial here: https://dhtmlx.com/blog/use-dhtmlxgantt-vue-js-framework-demo/
+ - Learn about dhtmlxGantt here: https://dhtmlx.com/docs/products/dhtmlxGantt/
+ - Learn about Vue.js here: https://vuejs.org/
