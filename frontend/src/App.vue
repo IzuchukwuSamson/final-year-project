@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>SPRINKLER IRRIGATION</h2>
+    <h2>SPRINKLER IRRIGATION MANAGEMENT APPLICATION</h2>
 
     <div class="right-container">
       <div class="gantt-selected-info">
@@ -14,6 +14,7 @@
           ><br />
           <span><b>End Date: </b>{{ formattedEndDate }}</span
           ><br />
+          <span>Info {{ selectTask.info }}</span>
         </div>
         <div v-else class="select-task-prompt">
           <h2>Click any task</h2>
@@ -51,17 +52,35 @@ export default {
         data: [
           {
             id: 1,
-            text: "Task #1",
-            start_date: "2020-01-17",
+            text: "Site Accessmennt",
+            start_date: "2023-06-17",
             duration: 3,
             progress: 0.6,
+            info: "lorem ipsum",
           },
           {
             id: 2,
             text: "Task #2",
-            start_date: "2020-01-20",
+            start_date: "2023-06-18",
             duration: 3,
             progress: 0.4,
+            info: "lorem ipsum",
+          },
+          {
+            id: 3,
+            text: "Task #3",
+            start_date: "2023-06-19",
+            duration: 3,
+            progress: 0.4,
+            info: "lorem ipsum",
+          },
+          {
+            id: 4,
+            text: "Task #4",
+            start_date: "2023-06-20",
+            duration: 3,
+            progress: 0.4,
+            info: "lorem ipsum",
           },
         ],
         links: [{ id: 1, source: 1, target: 2, type: "0" }],
@@ -89,6 +108,11 @@ export default {
       return `${taskEnd.getFullYear()} / ${
         taskEnd.getMonth() + 1
       } / ${taskEnd.getDate()}`;
+    },
+
+    info() {
+      let info = this.info;
+      return `${info.Array}`;
     },
   },
   methods: {
