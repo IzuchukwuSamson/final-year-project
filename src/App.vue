@@ -77,7 +77,7 @@ export default {
           {
             id: 4,
             text: "Layout Design:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-17",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -85,7 +85,7 @@ export default {
           {
             id: 5,
             text: "Hydraulic Design:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-21",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -93,7 +93,7 @@ export default {
           {
             id: 6,
             text: "Material Procurement:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-18",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -101,7 +101,7 @@ export default {
           {
             id: 7,
             text: "Permitting and Approvals:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-19",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -109,7 +109,7 @@ export default {
           {
             id: 8,
             text: "Clearing and Grading:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-21",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -125,7 +125,7 @@ export default {
           {
             id: 10,
             text: "Sprinkler Installation:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-22",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -133,7 +133,7 @@ export default {
           {
             id: 11,
             text: "Valve and Control Installation:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-23",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -141,7 +141,7 @@ export default {
           {
             id: 12,
             text: "Pump Installation:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-24",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -157,7 +157,7 @@ export default {
           {
             id: 14,
             text: "Adjustments:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-19",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -165,7 +165,7 @@ export default {
           {
             id: 15,
             text: "Safety Checks:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-18",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -173,7 +173,7 @@ export default {
           {
             id: 16,
             text: "Maintenance:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-16",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
@@ -182,7 +182,7 @@ export default {
           {
             id: 17,
             text: "Monitoring and Optimization:",
-            start_date: "2023-06-20",
+            start_date: "2023-06-17",
             duration: 3,
             progress: 0.4,
             info: "lorem ipsum",
