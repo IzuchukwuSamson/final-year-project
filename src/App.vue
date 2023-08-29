@@ -14,7 +14,16 @@
           ><br />
           <span><b>End Date: </b>{{ formattedEndDate }}</span
           ><br />
-          <span><b>Info </b>{{ selectedTask.info }}</span>
+          <span v-for="task in selectedTask.info" :key="task"
+            ><b>Info <br /> </b> {{ task.first }} <br />
+            {{ task.second }} <br />
+            {{ task.third }} <br />
+            {{ task.fourth }} <br />
+            {{ task.fifth }} <br />
+            {{ task.sixth }} <br />
+            {{ task.seventh }} <br />
+            {{ task.eighth }} <br />
+          </span>
         </div>
         <div v-else class="select-task-prompt">
           <h2>Click any task</h2>
@@ -56,7 +65,18 @@ export default {
             start_date: "2023-06-17",
             duration: 3,
             progress: 0.6,
-            info: "lorem ipsum",
+            info: [
+              {
+                first: "Topographic_infomation",
+                second: "Soil_Analysis",
+                third: "Climate_Assessment",
+                fourth: "Water_Source_Evaluation",
+                fifth: "Water_Quality_Assurance",
+                sixth: "Crop_Requirement",
+                seventh: "Irrigation_History",
+                eighth: "Microclimates_and_wind_patterns",
+              },
+            ],
           },
           {
             id: 2,
@@ -64,7 +84,18 @@ export default {
             start_date: "2023-06-18",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [
+              {
+                first: "1",
+                second: "2",
+                third: "3",
+                fourth: "4",
+                fifth: "5",
+                sixth: "6",
+                seventh: "7",
+                eighth: "8",
+              },
+            ],
           },
           {
             id: 3,
@@ -72,7 +103,7 @@ export default {
             start_date: "2023-06-19",
             duration: 3,
             // progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 4,
@@ -80,7 +111,7 @@ export default {
             start_date: "2023-06-17",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 5,
@@ -88,7 +119,7 @@ export default {
             start_date: "2023-06-21",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 6,
@@ -96,7 +127,7 @@ export default {
             start_date: "2023-06-18",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 7,
@@ -104,7 +135,7 @@ export default {
             start_date: "2023-06-19",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 8,
@@ -112,7 +143,7 @@ export default {
             start_date: "2023-06-21",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 9,
@@ -120,7 +151,7 @@ export default {
             start_date: "2023-06-20",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 10,
@@ -128,7 +159,7 @@ export default {
             start_date: "2023-06-22",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 11,
@@ -136,7 +167,7 @@ export default {
             start_date: "2023-06-23",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 12,
@@ -144,7 +175,7 @@ export default {
             start_date: "2023-06-24",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 13,
@@ -152,7 +183,7 @@ export default {
             start_date: "2023-06-20",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 14,
@@ -160,7 +191,7 @@ export default {
             start_date: "2023-06-19",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 15,
@@ -168,7 +199,7 @@ export default {
             start_date: "2023-06-18",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           {
             id: 16,
@@ -176,7 +207,7 @@ export default {
             start_date: "2023-06-16",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
 
           {
@@ -185,7 +216,7 @@ export default {
             start_date: "2023-06-17",
             duration: 3,
             progress: 0.4,
-            info: "lorem ipsum",
+            info: [],
           },
           // {
           //   id: 18,
@@ -193,7 +224,7 @@ export default {
           //   start_date: "2023-06-20",
           //   duration: 3,
           //   progress: 0.4,
-          //   info: "lorem ipsum",
+          //   info: [],
           // },
           // {
           //   id: 19,
