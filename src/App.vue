@@ -15,14 +15,10 @@
           <span><b>End Date: </b>{{ formattedEndDate }}</span
           ><br />
           <span v-for="task in selectedTask.info" :key="task"
-            ><b>Info <br /> </b> {{ task.first }} <br />
-            {{ task.second }} <br />
-            {{ task.third }} <br />
-            {{ task.fourth }} <br />
-            {{ task.fifth }} <br />
-            {{ task.sixth }} <br />
-            {{ task.seventh }} <br />
-            {{ task.eighth }} <br />
+            ><b>Info </b> <br />
+            <b> {{ task.first }} </b> <br />
+            <b>{{ task.second }} </b> <br />
+            <b> {{ task.third }} </b> <br />
           </span>
         </div>
         <div v-else class="select-task-prompt">
@@ -67,14 +63,12 @@ export default {
             progress: 0.6,
             info: [
               {
-                first: "Topographic_infomation",
-                second: "Soil_Analysis",
-                third: "Climate_Assessment",
-                fourth: "Water_Source_Evaluation",
-                fifth: "Water_Quality_Assurance",
-                sixth: "Crop_Requirement",
-                seventh: "Irrigation_History",
-                eighth: "Microclimates_and_wind_patterns",
+                first:
+                  "Topographic Infomation: Average elevation of 500 meters above sea level, Gentle slopes with an average gradient of 2%",
+                second:
+                  "Soil Analysis: Loamy soil with a balanced mixture of sand, silt, and clay, High porosity with water holding capacity of 25%, Nitrogen (N) - 40 ppm, Phosphorus (P) - 25 ppm, Potassium (K) - 200 ppm",
+                third:
+                  "Climate Assessment: Annual rainfall of 800 mm, 8-month growing season, from April to November.",
               },
             ],
           },
@@ -86,32 +80,35 @@ export default {
             progress: 0.4,
             info: [
               {
-                first: "1",
-                second: "2",
-                third: "3",
-                fourth: "4",
-                fifth: "5",
-                sixth: "6",
-                seventh: "7",
-                eighth: "8",
+                first: "Water Requirement = ET × Kc + Effective Rainfal",
+                second:
+                  "Water Requirement = (5.5 mm/day × 0.2) + (7.5 mm/day × 1.0) + (5.5 mm/day × 0.7) + 800 mm = 1460 mm + 750 mm + 385 mm + 800 mm = 3395 mm",
+                third: "",
               },
             ],
           },
-          {
-            id: 3,
-            text: "System Selection",
-            start_date: "2023-06-19",
-            duration: 3,
-            // progress: 0.4,
-            info: [],
-          },
+          // {
+          //   id: 3,
+          //   text: "System Selection",
+          //   start_date: "2023-06-19",
+          //   duration: 3,
+          //   // progress: 0.4,
+          //   info: [],
+          // },
           {
             id: 4,
             text: "Layout Design:",
             start_date: "2023-06-17",
             duration: 3,
             progress: 0.4,
-            info: [],
+            info: [
+              {
+                first:
+                  "Number of Blocks: Divide the land into four blocks, each covering approximately 1.5 hectares.",
+                second:
+                  "Block Arrangement: Arrange the blocks in a staggered pattern, considering the land's natural contours",
+              },
+            ],
           },
           {
             id: 5,
@@ -119,7 +116,16 @@ export default {
             start_date: "2023-06-21",
             duration: 3,
             progress: 0.4,
-            info: [],
+            info: [
+              {
+                first:
+                  "Main Canal Flow: Estimate the main canal flow rate based on the crop's water requirement and the number of blocks. For example, if each block requires 1500 mm of water and there are four blocks, the total water requirement is 6000 mm. Considering the growing season length of 8 months, the average monthly flow rate needed would be 750 mm.",
+                second:
+                  "Canal Dimensions: Design the main canal with a width of 1.5 meters and a depth of 0.6 meters, providing a cross-sectional area of 0.9 square meters.",
+                third:
+                  "Secondary Ditch Flow: Distribute the flow to each block through secondary ditches. If the width of a secondary ditch is 0.4 meters and the depth is 0.3 meters, the cross-sectional area would be 0.12 square meters.",
+              },
+            ],
           },
           {
             id: 6,
@@ -127,7 +133,16 @@ export default {
             start_date: "2023-06-18",
             duration: 3,
             progress: 0.4,
-            info: [],
+            info: [
+              {
+                first:
+                  "Concrete: Estimate the quantity of concrete required for constructing the main canal based on its dimensions (width, depth, length).",
+                second:
+                  "Reinforcement Bars: Procure steel reinforcement bars for reinforcing the concrete structure.",
+                // third:
+                //   "Formwork: Acquire formwork materials for shaping and containing the concrete during pouring.",
+              },
+            ],
           },
           {
             id: 7,
@@ -135,7 +150,14 @@ export default {
             start_date: "2023-06-19",
             duration: 3,
             progress: 0.4,
-            info: [],
+            info: [
+              {
+                first:
+                  "Land Use and Zoning Permit: Application Fees: $200 (estimated) and Processing Time: 1 month",
+                second:
+                  "Environmental Impact Assessment (EIA) Clearance: Consultancy Fees: $1500 (for an environmental consultant) EIA Report Preparation: $2000 (includes studies and documentation) ",
+              },
+            ],
           },
           {
             id: 8,
